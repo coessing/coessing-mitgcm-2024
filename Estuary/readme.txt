@@ -13,22 +13,23 @@
 # DeltaY = 5.09259444e-04
 # DeltaX = 5.23504400e-04
 
-# 1. Get MItgcm and this repository
+# 1. Get MItgcm, darwin3 and this repository
   git clone -–depth 1 git@github.com:MITgcm/MITgcm.git
-  git clone git@github.com:coessing/coessing-mitgcm-2023.git
+  git clone git@github.com:coessing/coessing-mitgcm-2024.git
+  download darwin3 from box drive using (https://nasa-ext.box.com/s/1vwbdy0b18g0wf0cpwn45ss72n36z0pv)
 
 # 2. Build executable
-  cd MITgcm
-  mkdir build
-  cd build
-  ../tools/genmake2 -mo ../../coessing-mitgcm-2023/Estuary/code
+  cd darwin3
+  mkdir estuary estuary/build
+  cd estuary/build
+  ../../tools/genmake2 -mo ../../../coessing-mitgcm-2024/Estuary/code
   make depend
   make -j
 
-# 3. Run a 1-day test experiment
+# 3. Run a 1-year simulation
   cd ..
   mkdir run
   cd run
   ln -sf ../build/mitgcmuv .
-  cp ../../coessing-mitgcm-2023/Estuary/input/* .
+  cp ../../../coessing-mitgcm-2024/Estuary/input/* .
   ./mitgcmuv > output.txt
