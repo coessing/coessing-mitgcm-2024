@@ -18,7 +18,14 @@
   git clone git@github.com:coessing/coessing-mitgcm-2024.git
   download darwin3 from box drive using (https://nasa-ext.box.com/s/1vwbdy0b18g0wf0cpwn45ss72n36z0pv)
 
-# 2. Build executable
+# 2. Create open boundary conditions
+  cd coessing-mitgcm-2024/Estuary/input
+  matlab         % or octave
+  mk_obcs
+  quit
+  cd ../../..
+
+# 3. Build executable
   cd darwin3
   mkdir estuary estuary/build
   cd estuary/build
@@ -26,7 +33,7 @@
   make depend
   make -j
 
-# 3. Run a 1-year simulation
+# 4. Run a 1-year simulation
   cd ..
   mkdir run
   cd run
