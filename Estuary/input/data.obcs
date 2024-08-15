@@ -1,0 +1,17 @@
+# ***************
+# Open boundaries
+# ***************
+ &OBCS_PARM01
+ OB_Iwest  =   18*1,
+ OB_Ieast  =   18*-1,
+# This flag check and equalise topography across open boundaries:
+ OBCSfixTopo = .TRUE.,
+ useOBCSprescribe=.TRUE.,
+#
+ OBWsFile='Estuary_25x18_OBWs',
+ OBWtFile='Estuary_25x18_OBWt',
+ OBWuFile='Estuary_25x18_OBWu',
+ OBEsFile='Estuary_25x18_OBEs',
+ OBEtFile='Estuary_25x18_OBEt',
+ OBEuFile='Estuary_25x18_OBEu',
+ &
