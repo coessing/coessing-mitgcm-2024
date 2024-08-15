@@ -72,3 +72,6 @@
   swdown_interpMethod = 0,
   lwdown_interpMethod = 0,
  /
+
+ &EXF_NML_OBCS
+ /

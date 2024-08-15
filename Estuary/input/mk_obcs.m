@@ -1,12 +1,13 @@
-dte=datenum(2023,3,4):1/24:datenum(2024,2,29);
+% dte=datenum(2023,3,4):1/24:datenum(2024,2,29);
+% nt=length(dte);
+% inflow in m^3/s
+% InSW=70.69*ones(nt);
+% InNW=95.20*ones(nt);
+load InFlow
+
 nx=25;
 ny=18;
 nz=10;
-nt=length(dte);
-
-% inflow in m^3/s
-InSW=70.69*ones(nt);
-InNW=95.20*ones(nt);
 
 DYG=readbin('../grid/DYG.data',[nx ny]);
 Depth=readbin('../grid/Depth.data',[nx ny]);
