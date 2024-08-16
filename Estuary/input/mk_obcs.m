@@ -9,6 +9,8 @@ nx=25;
 ny=18;
 nz=10;
 
+% Make sure that ../grid contains most up-to-date
+% grid files for integration domain
 DYG=readbin('../grid/DYG.data',[nx ny]);
 Depth=readbin('../grid/Depth.data',[nx ny]);
 AreaInSW=DYG(1,2)*Depth(1,2);
