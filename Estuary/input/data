@@ -70,8 +70,8 @@
  &PARM03
  startTime  = 0.0,
  endTime    = 31104000.0,
- deltaT     = 36.0,
- cAdjFreq   = 36.0,
+ deltaT     = 180.0,
+ cAdjFreq   = 180.0,
  pChkptFreq = 86400.0,
  chkptFreq  = 0.0,
  dumpFreq   = 86400.,
@@ -109,4 +109,6 @@
  bathyFile       = 'bath_25x18.bin',
  hydrogThetaFile = 'theta_25x18x10.bin',
  hydrogSaltFile  = 'salt_25x18x10.bin',
+ checkIniTemp=.FALSE.,
+ checkIniSalt=.false.,
  &

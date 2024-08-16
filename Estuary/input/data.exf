@@ -74,4 +74,11 @@
  /
 
  &EXF_NML_OBCS
+ obcsWstartdate1   = 20210304,
+ obcsWstartdate2   = 000000,
+ obcsWperiod       = 3600.0,
+#
+ obcsEstartdate1   = 20210304,
+ obcsEstartdate2   = 000000,
+ obcsEperiod       = 3600.0,
  /
